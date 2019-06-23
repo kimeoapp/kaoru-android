@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:labelTextSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="LightButton" parent="Widget.AppCompat.Button.Colored">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:labelTextSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TitleTheme" parent="android:Theme.Light">
+        <item name="android:textAppearance">@style/TitleTextAppearance</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

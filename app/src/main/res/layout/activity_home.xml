@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="in.co.block.kaoru.activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/title_top_margin">
+
+        <ImageView
+            android:id="@+id/name_init"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/title_top_margin"
+            android:id="@+id/name"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Green Trips"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/green_trips"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Black Trips"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/black_trips"/>
+
+
+    <Button
+        android:id="@+id/start_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        style="@style/LightButton"
+        android:background="@color/colorPrimaryLight"
+        android:text="@string/start_trip"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_in_progress"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:text="Ride in progress"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:visibility="gone"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trips"
+        android:layout_marginTop="30dp"
+        android:scrollbars="none"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
